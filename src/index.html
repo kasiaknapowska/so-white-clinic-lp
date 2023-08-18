@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <img class="background-image" />
+    <header>
+      <h1>So White Clinic Klinika stomatologii w Katowicach</h1>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="container">
+          <img id="logo" alt="logo" />
+          <h1>Wish you</h1>
+          <h2>smile</h2>
+          <p>
+            Hollywood Smile to śnieżnobiały, perfekcyjny uśmiech dobrze znany z
+            wielkiego ekranu i okładek kolorowych czasopism. Dzięki So White
+            Clinic jest on teraz osiągalny również dla Ciebie!
+          </p>
+          <h3><span></span>TYLKO W SIERPNIU <span></span></h3>
+          <ul>
+            <li>Konsultacja <span>za 99 zł</span></li>
+            <li>Finansowanie leczenia <span>w 10 ratach 0%</span></li>
+          </ul>
+          <a
+            href="https://borczyk.pl/oferta/ortodoncja/invisalign-go/"
+            class="primary"
+            target="blank"
+            >Więcej o Invisalign GO</a
+          >
+          <p>
+            Masz pytania? Zadzwoń teraz! <br />
+            <a href="tel: +48326060400">32 60 60 400</a>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h4>Umów konsultację</h4>
+          <form id="contact-form">
+            <input type="text" name="_honey" style="display: none" />
+            <div>
+              <label for="name">Imię i nazwisko*</label
+              ><span class="error-message"></span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Imię i nazwisko"
+              />
+            </div>
+            <div>
+              <label for="phone">Telefon*</label
+              ><span class="error-message"></span>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Numer telefonu"
+              />
+            </div>
+            <div>
+              <label for="email">E-mail*</label
+              ><span class="error-message"></span>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Adres e-mail"
+              />
+            </div>
+            <div>
+              <label for="message">Treść wiadomości</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Treść wiadomości"
+              ></textarea>
+            </div>
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="acceptdata"
+                name="acceptdata"
+                value="Wyrażam zgodę na przetwarzanie danych"
+              />
+              <span class="tooltip"
+                >Wyrażam zgodę na przetwarzanie moich danych osobowych przez
+                Roman Borczyk Klinika Implantologii i Stomatologii Estetycznej
+                sp.j. z siedzibą w Katowicach w celu przesłania informacji
+                handlowych drogą elektroniczną na podany adres e-mail zgodnie z
+                ustawą z dnia 18 lipca 2002r o świadczeniu usług droga
+                elektroniczną (Dz.U. 2002 Nr 144, 1204 z późn. zm.), zgodnie z
+                art. 23 ustawy z dnia 29 sierpnia 1997r. o ochronie danych
+                osobowych (tekst jednolity Dz. U. z 2015r., poz. 2135).</span
+              >
+              <label for="acceptdata">
+                  Wyrażam zgodę na przetwarzanie danych*</label
+              >
+
+              <span class="error-message"></span>
+            </div>
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="acceptpolicy"
+                name="acceptpolicy"
+                value="Akceptuję politykę prywatności"
+              />
+               <span class="tooltip"
+                >Administratorem danych osobowych jest firma Roman Borczyk
+                Klinika Implantologii i Stomatologii Estetycznej sp.j. w
+                Katowicach, ul. Czajek 5a, 40-533 Katowice. Podanie danych oraz
+                zgoda na ich przetwarzanie w celach nie związanych z procesem
+                leczenia jest dobrowolna. Niniejsze zgody obejmują przetwarzanie
+                danych w przyszłości, jeśli nie zmieni się cel przetwarzania lub
+                jeśli zgoda nie zostanie cofnięta. Przysługuje Państwu prawo
+                dostępu do treści danych osobowych, ich poprawienia, złożenia
+                sprzeciwu wobec przetwarzania danych w celach marketingowych lub
+                przekazania ich innym odbiorcom, w tym prawo do zaprzestania ich
+                przetwarzania w celach marketingowych. W tym celu prosimy
+                skontaktować się z recepcją Kliniki przy ulicy Czajek 5a w
+                Katowicach osobiście, telefonicznie (+48 322037425) lub mailowo
+                (obsluga.pacjenta @borczyk.pl)</span
+              >
+              <label for="acceptpolicy"> Akceptuję politykę prywatności*</label>
+
+              <span class="error-message"></span>
+            </div>
+            <button class="primary" type="submit" value="submit">
+              <span class="submit-text">Wyślij</span>
+
+              <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div class="cookies d-none">
+      <p>
+        Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym
+        poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich
+        użycie.
+      </p>
+      <button id="cookie-close" class="secondary btn-s">Zgoda</button>
+    </div>
+  </body>
+</html>

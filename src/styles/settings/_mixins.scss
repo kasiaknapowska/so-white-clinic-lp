@@ -1,0 +1,16 @@
+@use "./placeholders";
+
+@mixin websiteFont($weight: 400, $color, $size: 1rem) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: 150%;
+    letter-spacing: .5px;
+    @content;
+  }
+@mixin button($background, $border, $color) {
+  @extend %button;
+    background-color: $background;
+    border: $border;
+    color: $color;
+}
