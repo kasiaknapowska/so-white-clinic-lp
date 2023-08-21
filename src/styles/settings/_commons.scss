@@ -86,7 +86,7 @@ body {
       @include button($colorSecondary, none, white);
       border: 1px solid $colorSecondary;
       @media screen and (min-width: 500px) {
-        min-width: 280px;
+        min-width: 286px;
       }
       &:hover {
         background-color: $colorPrimary;
@@ -97,7 +97,7 @@ body {
       display: inline-block;
       @include button(transparent, 1px solid $colorSecondary, $colorSecondary);
       @media screen and (min-width: 500px) {
-        min-width: 280px;
+        min-width: 286px;
       }
       &:hover {
         background-color: rgba(255, 255, 255, 0.25);
@@ -108,7 +108,7 @@ body {
     @include button($colorSecondary, none, white);
     font-family: $webFont;
     @media screen and (min-width: 500px) {
-      min-width: 280px;
+      min-width: 286px;
     }
     &:hover {
       background-color: $colorPrimary;
@@ -152,8 +152,16 @@ body {
   position: fixed;
   right: -200px;
   z-index: -1;
+}
+.mobile-background-image {
+  height: 100vw;
+  width: 100%;
+  background-image: url("../assets/heroMobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media screen and ($desktop) {
-    background-image: url("../assets/hero.png");
+    display: none;
   }
 }
 img.logo {

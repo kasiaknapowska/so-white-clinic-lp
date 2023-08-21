@@ -20,6 +20,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   inImg.src = insta;
   const phoneImg = document.getElementById("phone");
   phoneImg.src = phone;
+  const phone1Img = document.getElementById("phone1");
+  phone1Img.src = phone;
+  const homeImg = document.getElementById("home");
+  homeImg.src = home;
+  const mailImg = document.getElementById("mail");
+  mailImg.src = mail;
 
   //form
   const form = document.querySelector("#contact-form");
