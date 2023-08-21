@@ -7,7 +7,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img class="background-image" loading="lazy"/>
+    <div class="background-image"></div>
     <header>
       <h1>So White Clinic Klinika stomatologii w Katowicach</h1>
     </header>
@@ -16,7 +16,7 @@
         <div class="container">
           <img id="logo" alt="logo" class="logo" />
         </div>
-        <div class="container">
+        <div class="hero-content container">
           <h1>Wish you</h1>
           <h2>smile</h2>
           <p>
@@ -24,24 +24,20 @@
             wielkiego ekranu i okładek kolorowych czasopism. Dzięki So White
             Clinic jest on teraz osiągalny również dla Ciebie!
           </p>
-          <h3><span></span>TYLKO W SIERPNIU <span></span></h3>
-          <ul>
-            <li>Konsultacja <span>za 99 zł</span></li>
-            <li>Finansowanie leczenia <span>w 10 ratach 0%</span></li>
-          </ul>
-          <a
-            href="https://borczyk.pl/oferta/ortodoncja/invisalign-go/"
-            class="primary"
-            target="blank"
-            >Więcej o Invisalign GO</a
-          >
-          <p>
-            Masz pytania? Zadzwoń teraz! <br />
-            <a href="tel: +48326060400">32 60 60 400</a>
-          </p>
+          <!-- <p>
+            Dla nas Hollywood smile oznacza kompleksowe
+            podejście do poprawy estetyki zębów i uśmiechu pacjenta, mające na
+            celu stworzenie idealnie harmonijnego i atrakcyjnego wyglądu.
+          </p> -->
+          <h3>Od wymarzonego uśmiechu dzieli Cię już tylko jeden krok!</h3>
+          <p>Skontaktuj się z nami! Zadzwoń lub wypełnij formularz!</p>
+          <div>
+            <a href="tel:+48326060400" class="primary">Zadzwoń do nas</a>
+            <a href="#form-section" class="secondary">Wypełnij formularz</a>
+          </div>
         </div>
       </section>
-      <section class="form-section">
+      <section id="form-section" class="form-section">
         <div class="container">
           <h4>Umów konsultację w So White Clinic</h4>
           <p>
