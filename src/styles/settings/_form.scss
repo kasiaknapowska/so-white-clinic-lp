@@ -3,7 +3,7 @@ form {
   flex-direction: column;
   width: 100%;
   label {
-    @include websiteFont(500, $colorNeutralVeryDark, 0.8rem);
+    @include websiteFont(500, $colorNeutralDark, 0.8rem);
     margin: 0 $space1 0 0;
   }
   input,
@@ -68,7 +68,7 @@ form {
       position: absolute;
       bottom: 150%;
       z-index: 1;
-      background-color: $colorNeutralVeryDark;
+      background-color: $colorNeutralDark;
       @include websiteFont(400, white, 0.7rem);
       padding: $space2;
       width: 70vw;
@@ -86,7 +86,7 @@ form {
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: $colorNeutralVeryDark transparent transparent transparent;
+      border-color: $colorNeutralDark transparent transparent transparent;
     }
 
     @media screen and (max-width: 899px) {
@@ -149,6 +149,8 @@ form {
       transform: rotate(360deg);
     }
   }
+
+}
   .input-error {
     border: 1px solid $colorAlert;
   }
@@ -156,4 +158,3 @@ form {
     @include websiteFont(500, $colorAlert, 0.8rem);
     display: inline-block;
   }
-}

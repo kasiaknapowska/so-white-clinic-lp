@@ -4,29 +4,25 @@ $colorSecondary: #6EC846;
 $colorPrimaryLight: #ecf9fc;
 $colorPrimaryDark: #255FAA;
 
-$colorNeutralVeryDark: rgb(40, 40, 40);
-$colorNeutralDark: rgb(80, 80, 80);
-$colorNeutral: rgb(180, 180, 180);
+$colorNeutralDark: rgb(40, 40, 40);
 $colorNeutralLight: rgb(220, 220, 220);
 
 $colorAlert: #db295b;
 
 //fonts
 $webFont: "Montserrat", sans-serif;
+$webFontDecor: "Tahu";
 
 //fonts' sizes
 $h1desktop: 3rem;
-$h2desktop: 2rem;
-$h3desktop: 1.5rem;
-$h4desktop: 1.5rem;
-$pdesktop: 1rem;
+$subheadingDesktop: 1.5rem;
+$decorDesktop: 10rem;
 
-$h1mobile: 2.2rem;
-$h2mobile: 1.5rem;
-$h3mobile: 1.25rem;
-$h4mobile: 1.25rem;
-$pmobile: 1rem;
+$h1mobile: 2.25rem;
+$subheadingMobile: 1.25rem;
+$decorMobile: 6rem;
 
+$p: 1rem;
 
 
 //spaces
