@@ -181,35 +181,6 @@ img.logo {
   @media screen and ($desktop) {
     height: 100vh;
   }
-  //   @media screen and ($desktop) {
-  //     height: 100vh;
-  //     display: flex;
-  //     flex-basis: 0;
-
-  //     & > section {
-  //       flex-grow: 1;
-  //       flex-basis: 0;
-  //     }
-  //   }
-  //   & > section {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     flex-direction: column;
-  //     padding: $space4 0;
-  //     & > div {
-  //       @media screen and ($tablet) {
-  //         width: 70%;
-  //       }
-  //     }
-  //   }
-  //   & > section:nth-child(2) {
-  //     background-color: rgba(255, 255, 255, 0.8);
-  //     h4 {
-  //       color: $colorNeutralDark;
-  //       text-transform: uppercase;
-  //     }
-  //   }
 }
 .form-section {
   @media screen and ($desktop) {
@@ -222,8 +193,6 @@ img.logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  // background-color: rgba(255, 255, 255, 0.8);
-  // background-color: $colorPrimaryLight;
   background-color: white;
 }
 footer {
@@ -240,7 +209,11 @@ footer {
   }
 
   .social-icons {
-    text-align: right;
+    margin-top: $space5;
+    @media screen and (min-width: 500px) {
+      text-align: right;
+      margin-top: 0;
+    }
     .social-icon {
       margin: $space2;
     }

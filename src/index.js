@@ -2,6 +2,8 @@ import "./styles/main.scss";
 import { Form } from "./js/form";
 import { Cookies } from "./js/cookies";
 import logo from "./assets/logo.png";
+import fb from "./assets/icons/icon-fb.svg";
+import insta from "./assets/icons/icon-insta.svg";
 
 window.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
@@ -9,6 +11,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
   //icons
   const logoImg = document.getElementById("logo");
   logoImg.src = logo;
+  const fbImg = document.getElementById("fb");
+  fbImg.src = fb;
+  const inImg = document.getElementById("in");
+  inImg.src = insta;
 
   //form
   const form = document.querySelector("#contact-form");
