@@ -94,12 +94,12 @@ export class Form {
 
   sendMail(formData) {
     const request1 = this.makeRequest(
-      "Kampania Invisalign Go 07.2023",
+      "So white Clinic Contact Form",
       formData,
       "ca26f5ec6f466a4de7ad179895f5f8d8"
     );
     const request2 = this.makeRequest(
-      "Kampania Invisalign Go 07.2023",
+      "So white Clinic Contact Form",
       formData,
       "708204b20fd8f37dc286446700a680df"
     );

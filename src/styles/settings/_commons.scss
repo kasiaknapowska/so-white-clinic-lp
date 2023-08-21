@@ -118,6 +118,11 @@ body {
       background-color: $colorNeutralDark;
     }
   }
+  header {
+    & > h1 {
+      display: none;
+    }
+  }
   .container {
     width: 90%;
     margin: 0 auto;
@@ -130,8 +135,7 @@ body {
 .background-image {
   min-height: 100vh;
   width: calc(100% + 1px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../assets/bgMobile.jpg");
+  background-image: url("../assets/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,4 +171,78 @@ body {
 }
 .d-none {
   display: none;
+}
+img.logo {
+  width: 100%;
+  max-width: 260px;
+  margin: $space5 0;
+}
+.hero {
+  @media screen and ($desktop) {
+    height: 100vh;
+  }
+  //   @media screen and ($desktop) {
+  //     height: 100vh;
+  //     display: flex;
+  //     flex-basis: 0;
+
+  //     & > section {
+  //       flex-grow: 1;
+  //       flex-basis: 0;
+  //     }
+  //   }
+  //   & > section {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex-direction: column;
+  //     padding: $space4 0;
+  //     & > div {
+  //       @media screen and ($tablet) {
+  //         width: 70%;
+  //       }
+  //     }
+  //   }
+  //   & > section:nth-child(2) {
+  //     background-color: rgba(255, 255, 255, 0.8);
+  //     h4 {
+  //       color: $colorNeutralDark;
+  //       text-transform: uppercase;
+  //     }
+  //   }
+}
+.form-section {
+  @media screen and ($desktop) {
+    height: 100vh;
+  }
+  div {
+    max-width: 600px;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: rgba(255, 255, 255, 0.8);
+  // background-color: $colorPrimaryLight;
+  background-color: white;
+}
+footer {
+  background-color: $colorPrimary;
+  min-height: 50vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  h4,
+  address,
+  p {
+    color: white;
+  }
+
+  .social-icons {
+    text-align: right;
+    .social-icon {
+      margin: $space2;
+    }
+  }
 }

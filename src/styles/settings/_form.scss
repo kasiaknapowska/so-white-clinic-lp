@@ -1,0 +1,159 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  label {
+    @include websiteFont(500, $colorNeutralVeryDark, 0.8rem);
+    margin: 0 $space1 0 0;
+  }
+  input,
+  textarea {
+    width: 100%;
+    border-radius: $borderRadius;
+    border: none;
+    margin-top: calc(0.5 * $space1);
+    margin-bottom: $space1;
+    padding: 0 $space2;
+    font-family: $webFont;
+    font-size: 0.8rem;
+    &:focus {
+      border: 1px solid $colorPrimary;
+    }
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+  input:not([type="checkbox"]) {
+    min-height: 3rem;
+    border: 1px solid $colorNeutralLight;
+  }
+  textarea {
+    padding-top: $space2;
+    height: 5rem;
+    border: 1px solid $colorNeutralLight;
+  }
+  input:focus,
+  textarea:focus {
+    border: 1px solid $colorPrimary;
+  }
+  & > div {
+    padding: calc($space1 * 0.5) 0;
+  }
+  input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    line-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3px;
+    color: white;
+
+    &:checked {
+      accent-color: $colorPrimary;
+    }
+  }
+
+  .checkbox-container {
+    label {
+      font-size: 0.7rem;
+    }
+    margin: 0;
+    padding: 0;
+    position: relative;
+    .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s;
+      position: absolute;
+      bottom: 150%;
+      z-index: 1;
+      background-color: $colorNeutralVeryDark;
+      @include websiteFont(400, white, 0.7rem);
+      padding: $space2;
+      width: 70vw;
+      left: -1rem;
+      border-radius: $borderRadius;
+      @media screen and ($tablet) {
+        width: 400px;
+      }
+    }
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $colorNeutralVeryDark transparent transparent transparent;
+    }
+
+    @media screen and (max-width: 899px) {
+      &:focus-within .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    @media screen and ($desktop) {
+      &:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  button {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @media screen and ($tablet) {
+      width: auto;
+    }
+  }
+
+  //loading spinner
+
+  .lds-ring {
+    display: none;
+    position: relative;
+    width: 22px;
+    height: 22px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .input-error {
+    border: 1px solid $colorAlert;
+  }
+  .error-message {
+    @include websiteFont(500, $colorAlert, 0.8rem);
+    display: inline-block;
+  }
+}

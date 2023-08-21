@@ -7,15 +7,16 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img class="background-image" />
+    <img class="background-image" loading="lazy"/>
     <header>
       <h1>So White Clinic Klinika stomatologii w Katowicach</h1>
     </header>
-
-    <main class="hero">
-      <section>
+    <main>
+      <section class="hero">
         <div class="container">
-          <img id="logo" alt="logo" />
+          <img id="logo" alt="logo" class="logo" />
+        </div>
+        <div class="container">
           <h1>Wish you</h1>
           <h2>smile</h2>
           <p>
@@ -40,9 +41,13 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="form-section">
         <div class="container">
-          <h4>Umów konsultację</h4>
+          <h4>Umów konsultację w So White Clinic</h4>
+          <p>
+            Zadaj nam pytanie lub zostaw numer telefonu. Nasze recepcjonistki
+            skontaktują się z Tobą, by omówić Twoją drogę do pięknego uśmiechu!
+          </p>
           <form id="contact-form">
             <input type="text" name="_honey" style="display: none" />
             <div>
@@ -148,6 +153,44 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container">
+        <h4>So White Clinic</h4>
+        <address>Katowice, ul. Czajek 5</address>
+        <p><a href="tel:+48322037425"> 32 60 60 400</a></p>
+        <p>
+          <a href="mailto:recepcja@sowhiteclinic.pl"
+            >recepcja@sowhiteclinic.pl</a
+          >
+        </p>
+        <p>www.sowhiteclinic.pl</p>
+
+        <div class="social-icons">
+          <a
+            href="https://pl-pl.facebook.com/KlinikaBorczyk/"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            <!-- <img id="fb" class="social-icon" alt="facebook" /> -->
+          </a>
+
+          <a
+            href="https://www.instagram.com/klinika_borczyk"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            <!-- <img id="in" class="social-icon" alt="instagram" /> -->
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCEZpavPFvS4TxTMh-w9CW1g"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            <!-- <img id="yt" class="social-icon" alt="youtube" /> -->
+          </a>
+        </div>
+      </div>
+    </footer>
     <div class="cookies d-none">
       <p>
         Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym
