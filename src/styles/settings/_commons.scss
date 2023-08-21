@@ -230,6 +230,33 @@ footer {
     }
   }
 }
+.scroll-to-top-btn {
+  display: none;
+  @include button(transparent, 1px solid $colorNeutralDark, $colorNeutralDark);
+  font-family: $webFont;
+  position: fixed;
+  bottom: $space5;
+  right: 5%;
+  width: 3rem;
+  height: 3rem;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  div {
+    width: 1rem;
+    height: 1rem;
+    border-top: 1px solid $colorNeutralDark;
+    border-left: 1px solid $colorNeutralDark;
+    transform: rotate(45deg);
+    position: relative;
+    left: 14px;
+    top: 4px;
+  }
+  @media screen and ($desktop) {
+    display: block;
+    right: $space3;
+  }
+}
 .cookies {
   width: 100vw;
   position: fixed;
