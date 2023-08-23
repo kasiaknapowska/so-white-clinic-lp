@@ -24,15 +24,16 @@ body {
     @include websiteFont(400, $colorNeutralDark, $h1mobile) {
       margin: $space4 0 $space1 0;
       max-width: 800px;
-      margin-bottom: $space4;
+      margin-bottom: $space5;
+      position: relative;
       @media screen and ($tablet) {
-        margin-bottom: $space5;
+        margin-bottom: calc($space5 * 2);
       }
     }
     span.decor {
       display: block;
       font-family: $webFontDecor;
-      position: relative;
+      position: absolute;
       font-weight: 400;
       font-size: $decorMobile;
       left: 4rem;
@@ -63,6 +64,9 @@ body {
     @include websiteFont(400, $colorNeutralDark, $p) {
       margin: 1rem 0;
       max-width: 600px;
+    }
+    span {
+      display: inline-block;
     }
   }
   @media screen and ($tablet) {
@@ -156,6 +160,7 @@ body {
 .mobile-background-image {
   height: 100vw;
   width: 100%;
+  overflow-x: hidden;
   background-image: url("../assets/heroMobile.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +263,7 @@ footer {
   }
 }
 .cookies {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
   background-color: $colorNeutralDark;
