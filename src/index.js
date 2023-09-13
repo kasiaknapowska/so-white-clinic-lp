@@ -2,7 +2,7 @@ import "./styles/main.scss";
 import { Form } from "./js/form";
 import { Cookies } from "./js/cookies";
 import { ScrollToTop } from "./js/scrollToTop";
-import logo from "./assets/logo.png";
+import logo from "./assets/logo.svg";
 import fb from "./assets/icons/icon-fb.svg";
 import insta from "./assets/icons/icon-insta.svg";
 import phone from "./assets/icons/icon-phone.svg";
@@ -12,14 +12,14 @@ import mail from "./assets/icons/icon-mail.svg";
 window.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
 
-  //icons
+ // icons
   const logoImg = document.getElementById("logo");
   logoImg.src = logo;
   const fbImg = document.getElementById("fb");
   fbImg.src = fb;
   const inImg = document.getElementById("in");
   inImg.src = insta;
-  const phoneImg = document.getElementById("phone");
+  const phoneImg = document.getElementById("callus");
   phoneImg.src = phone;
   const phone1Img = document.getElementById("phone1");
   phone1Img.src = phone;

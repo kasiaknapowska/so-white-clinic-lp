@@ -3,7 +3,7 @@ form {
   flex-direction: column;
   width: 100%;
   label {
-    @include websiteFont(500, $colorNeutralDark, 0.8rem);
+    @include websiteFont(500, $colorNeutralDark, 1rem);
     margin: 0 $space1 0 0;
   }
   input,
@@ -56,7 +56,7 @@ form {
 
   .checkbox-container {
     label {
-      font-size: 0.7rem;
+      font-size: 0.75rem;
     }
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ form {
       bottom: 150%;
       z-index: 1;
       background-color: $colorNeutralDark;
-      @include websiteFont(400, white, 0.7rem);
+      @include websiteFont(400, white, 0.75rem);
       padding: $space2;
       width: 70vw;
       left: -1rem;

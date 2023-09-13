@@ -297,13 +297,13 @@ module.exports = __webpack_require__.p + "icon-phone.svg";
 
 /***/ }),
 
-/***/ "./src/assets/logo.png":
+/***/ "./src/assets/logo.svg":
 /*!*****************************!*\
-  !*** ./src/assets/logo.png ***!
+  !*** ./src/assets/logo.svg ***!
   \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "logo.png";
+module.exports = __webpack_require__.p + "logo.svg";
 
 /***/ })
 
@@ -409,7 +409,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/form */ "./src/js/form.js");
 /* harmony import */ var _js_cookies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/cookies */ "./src/js/cookies.js");
 /* harmony import */ var _js_scrollToTop__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/scrollToTop */ "./src/js/scrollToTop.js");
-/* harmony import */ var _assets_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/logo.png */ "./src/assets/logo.png");
+/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/logo.svg */ "./src/assets/logo.svg");
 /* harmony import */ var _assets_icons_icon_fb_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/icons/icon-fb.svg */ "./src/assets/icons/icon-fb.svg");
 /* harmony import */ var _assets_icons_icon_insta_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/icons/icon-insta.svg */ "./src/assets/icons/icon-insta.svg");
 /* harmony import */ var _assets_icons_icon_phone_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/icons/icon-phone.svg */ "./src/assets/icons/icon-phone.svg");
@@ -428,14 +428,14 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM fully loaded and parsed");
 
-  //icons
+  // icons
   var logoImg = document.getElementById("logo");
-  logoImg.src = _assets_logo_png__WEBPACK_IMPORTED_MODULE_4__;
+  logoImg.src = _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4__;
   var fbImg = document.getElementById("fb");
   fbImg.src = _assets_icons_icon_fb_svg__WEBPACK_IMPORTED_MODULE_5__;
   var inImg = document.getElementById("in");
   inImg.src = _assets_icons_icon_insta_svg__WEBPACK_IMPORTED_MODULE_6__;
-  var phoneImg = document.getElementById("phone");
+  var phoneImg = document.getElementById("callus");
   phoneImg.src = _assets_icons_icon_phone_svg__WEBPACK_IMPORTED_MODULE_7__;
   var phone1Img = document.getElementById("phone1");
   phone1Img.src = _assets_icons_icon_phone_svg__WEBPACK_IMPORTED_MODULE_7__;
@@ -463,4 +463,4 @@ var top = new _js_scrollToTop__WEBPACK_IMPORTED_MODULE_3__.ScrollToTop(scrollToT
 
 /******/ })()
 ;
-//# sourceMappingURL=index13366ea9fb2d4d518434.js.map
+//# sourceMappingURL=index8b3adfc8f8d618827b09.js.map

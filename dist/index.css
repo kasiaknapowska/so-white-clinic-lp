@@ -366,6 +366,7 @@ textarea {
   src: url(tahu-webfont.woff2) format("woff2"), url(tahu-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -543,13 +544,14 @@ body .container {
   display: none;
   height: 100vh;
   width: 100%;
-  background-image: url(hero.png);
+  background-image: url(hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
   right: -200px;
   z-index: -1;
+  aspect-ratio: 1366/1080;
 }
 @media screen and (min-width: 1200px) {
   .background-image {
@@ -561,10 +563,11 @@ body .container {
   height: 100vw;
   width: 100%;
   overflow-x: hidden;
-  background-image: url(heroMobile.png);
+  background-image: url(heromobile.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  aspect-ratio: 1080/1080;
 }
 @media screen and (min-width: 1200px) {
   .mobile-background-image {
@@ -575,6 +578,7 @@ body .container {
 img.logo {
   width: 100%;
   max-width: 200px;
+  height: auto;
   margin: 2rem 0;
 }
 @media screen and (min-width: 900px) {
@@ -708,7 +712,7 @@ form {
   width: 100%;
 }
 form label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: rgb(40, 40, 40);
   line-height: 150%;
@@ -769,7 +773,7 @@ form .checkbox-container {
   position: relative;
 }
 form .checkbox-container label {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 form .checkbox-container .tooltip {
   visibility: hidden;
@@ -779,7 +783,7 @@ form .checkbox-container .tooltip {
   bottom: 150%;
   z-index: 1;
   background-color: rgb(40, 40, 40);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: white;
   line-height: 150%;
