@@ -49,7 +49,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: "So White Clinic", filename: "index.html", template: 'src/index.html', chunks: ['index'] }),
+    new HtmlWebpackPlugin({ title: "Klinika Stomatologii So White Clinic Katowice", filename: "index.html", template: 'src/index.html', chunks: ['index'] }),
     new HtmlWebpackPlugin({title: "Dziękujemy", filename: "thankyou.html", template: 'src/pages/thankyou.html', chunks: ['thankyou']}),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
